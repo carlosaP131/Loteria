@@ -41,7 +41,7 @@ public class ServidorGrafico extends javax.swing.JFrame {
         initComponents();
     }
     
-    Picture p = new Picture("C:\\Users\\harry\\Downloads\\loteria-parche.jpg");
+    Picture p = new Picture("/LoteriaMexicanaMultiplayer/src/ImagenesLoteria/loteria-parche.jpg");
     Image img = p.getImage();
     private Bonche bonche = new Bonche();
     private static ArrayList <Handler> handlers = new ArrayList();
@@ -86,7 +86,6 @@ public class ServidorGrafico extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setFont(new java.awt.Font("Salmela Script", 0, 25)); // NOI18N
         jButton3.setText("Iniciar partida");
         jButton3.setBorder(null);
@@ -109,9 +108,8 @@ public class ServidorGrafico extends javax.swing.JFrame {
         jLabel1.setText("Loteria Mexicana ");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(40, 50, 610, 120);
+        jLabel1.setBounds(-10, 40, 690, 120);
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Salmela Script", 0, 25)); // NOI18N
         jButton2.setText("Salir");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
